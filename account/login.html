@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Coffee Shop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/scripts.js"></script>
+    
+</head>
+<body>
+    <header style="top: -16px;">
+        <div class="header" style="background-color: #473c3c; margin: 0px; font-family: Roboto;">
+            <div class="logo">
+                <a href="../index.html" style="padding-top: 5px;"><img  src="../img/Coffee.png" width="200px"  alt=""></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="sub-menu"><a href="index.html" class="go-to">Home</a></li>
+                    <li class="sub-menu"><a href="" class="go-to">Collection</a></li>
+                    <li class="sub-menu"><a href="" class="go-to">Coffee</a></li>
+                    <li class="sub-menu"><a href="" class="go-to">Snackes</a></li>
+                    <li class="sub-menu"><a href="" class="go-to">Tea</a></li>
+                </ul>
+            </div>
+            <div class="function">
+                <a class="function" href="" id="search"><img src="../img/search.png" width="20px" alt="">
+                    
+                </a>
+                <a class="function" id="account" >
+                    <img src="../img/account.png" width="20px" alt="">
+                    <div class="menu-acc">
+                        <a href="">Đăng nhập</a><br>
+                        <a href="">Đăng ký</a>
+                    </div>
+                    
+                </a>
+                <a class="function" id="cart" href=""><img src="../img/shopping-cart.png" width="20px" alt=""></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </header>
+    <div class="clear"></div>
+    <main>
+        <div class="wrap"></div>
+        <div class="tl-acc">
+            <p style="font-family: Spicy Rice;">Đăng nhập</p>
+        </div>
+        <div class="reg">
+            <form id="form-log" action="../index.html" method="">
+                <input id="username" type="text" placeholder="Email"><br>
+                <input id="password" type="text" placeholder="Mật khẩu"><br>
+                <button class="btn">Đăng nhập</button>
+            </form>
+            <i>Bạn chưa có tài khoản?</i>
+            <div class="go-reg"><a href="register.html">Đăng ký</a></div>
+            <div class="return"><a href="../index.html">Quay lại trang chủ</a></div>
+        </div>
+        <script>
+            var form = document.getElementById("form-log");
+            form.addEventListener('submit', kiemtra);
+        </script>
+    </main>
+    <footer>
+        <div class="clear"></div>
+        <div class="footer-up">
+            <ul>
+                <li>Help
+                    
+                        <a href="">Search</a>
+                        <a href="">Help</a>
+                        <a href="">Information</a>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Shipping Details</a>
+                    
+                </li>
+                <li>Support
+                    
+                        <a href="">Contact us</a>
+                        <a href="">About us</a>
+                        <a href="">Careers</a>
+                        <a href="">Refunds & Return</a>
+                        <a href="">Deliveries</a>
+                    
+                </li>
+                <li>Information
+                    
+                        <a href="">Search Terms</a>
+                        <a href="">Advanced Search</a>
+                        <a href="">Help & Faq's</a>
+                        <a href="">Store Location</a>
+                        <a href="">Orders & Returns</a>
+                    
+                </li>
+                <li>Contact us
+                    
+                        <span>Add</span>
+                        <span>91 12345678</span>
+                        <span>sample@domain.com</span>
+                        <span>support@somemail.com</span>
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="footer-down">
+            <span>Copyright @ 2020 Lynx Coffee Powered by EdClemons. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="../scripts/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lynx - Coffee Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="img/Coffee.png" width="200px" alt=""></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="sub-menu"><a href="index.html" class="go-to">Home</a></li>
+                    <li class="sub-menu"><a href="" class="go-to">Collection</a>
+                        <div class="mnu2">
+                           <a href="">Bán chạy</a>
+                           <a href="">Hàng mới về</a>
+                           <a href="">Sản phẩm mới</a>
+                           <a href="">Sale off</a>
+                        </div>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="" class="go-to">Coffee</a>
+                        <div class="mnu2">
+                           <a href="">Cappuchino</a>
+                           <a href="">Cool coffee</a>
+                           <a href="">Espresso</a>
+                           <a href="">Indian</a>
+                           <a href="">Milk shake</a>
+                           <a href="">Beverages</a>
+                        </div>
+                    </li>
+                    <li class="sub-menu"><a href="" class="go-to">Tea</a>
+                    	<div class="mnu2">
+                           <a href="">Black tea</a>
+                           <a href="">Grean tea</a>
+                           <a href="">Oolong tea</a>
+                           <a href="">White tea</a>
+                    	</div>
+                    </li>
+                    <li class="sub-menu"><a href="" class="go-to">Khám phá</a>
+                        <div class="mnu2">
+                           <a href="">Drinkware</a>
+                           <a href="">Tote bags</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="function">
+                <ul>
+                    <li><a href=""><img src="img/search.png" width="20px" ></a>
+                        <div class="search-box">
+                            <input placeholder="Tìm kiếm" id="search" type="text">
+                        </div>
+                    </li>
+                    <li><a href=""><img src="img/account.png" width="20px"></a>
+                        <div class="menu-acc">
+                            <a href="account/login.html">Đăng nhập</a><br>
+                            <a href="account/register.html">Đăng ký</a>
+                        </div>
+                    </li>
+                    <li><a href=""><img src="img/shopping-cart.png" width="20px"></a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </header>
+    <main>
+        <div class="intro">
+            <div class="intro-top">
+                <div class="slide">
+                    <img src="img/slider-1_2000x.webp" alt="" id="slide">
+                    <div class="caption">Caption 1</div>
+                </div>
+                <div class="slide">
+                    <img src="img/slider-3_c967c149-8859-4de5-b5f0-3099b3ce4ce2_2000x.webp" alt="" id="slide">
+                    <div class="caption">Caption 2</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <script >
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+                    function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("slide");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}
+                    slides[slideIndex-1].style.display = "block";
+                    setTimeout(showSlides, 5000); // Change image every 2 seconds
+                    }
+                </script>
+            </div>
+            <div class="clear"></div>
+            <div class="intro-detail">
+                <div class="clear"></div>
+                <div style="text-align: center;" class="text">Lựa chọn hoàn hảo</div>
+                <div class="detail-left">
+                    <div class="img-detail"><img src="img/1_detail.webp" alt="" srcset=""></div>
+                    <div class="img-content">
+                        <h4>Croissant</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui, perspiciatis optio voluptatum sit a, nemo natus, est dolor error deleniti sapiente porro sunt rerum. Quod voluptatum facilis tempore sunt?</p>
+                    </div>
+                    <div class="img-detail"><img src="img/2_detail.webp" alt="" srcset=""></div>
+                    <div class="img-content">
+                        <h4>French Toast</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui, perspiciatis optio voluptatum sit a, nemo natus, est dolor error deleniti sapiente porro sunt rerum. Quod voluptatum facilis tempore sunt?</p>
+                    </div>
+                    <div class="img-detail"><img src="img/3_detail.webp" alt="" srcset=""></div>
+                    <div class="img-content">
+                        <h4>Pancakes</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui, perspiciatis optio voluptatum sit a, nemo natus, est dolor error deleniti sapiente porro sunt rerum. Quod voluptatum facilis tempore sunt?</p>
+                    </div>
+                </div>
+                <div class="detail-center">
+                    <div class="img-detail"><img src="img/intro.png" alt=""></div>
+                    <div class="img-content">
+
+                    </div>
+                </div>
+                <div class="detail-right">
+                    <div class="img-detail"><img src="img/4_detail.webp" alt="" srcset=""></div>
+                    <div class="img-content">
+                        <h4>Turkish Coffee</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui, perspiciatis optio voluptatum sit a, nemo natus, est dolor error deleniti sapiente porro sunt rerum. Quod voluptatum facilis tempore sunt?</p>
+                    </div>
+                    <div class="img-detail"><img src="img/5_detail.webp" alt="" srcset=""></div>
+                    <div class="img-content">
+                        <h4>Coffee To Go</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui, perspiciatis optio voluptatum sit a, nemo natus, est dolor error deleniti sapiente porro sunt rerum. Quod voluptatum facilis tempore sunt?</p>
+                    </div>
+                    <div class="img-detail"><img src="img/6_detail.webp" alt="" srcset=""></div>
+                    <div class="img-content">
+                        <h4>Morning Coffee</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui, perspiciatis optio voluptatum sit a, nemo natus, est dolor error deleniti sapiente porro sunt rerum. Quod voluptatum facilis tempore sunt?</p>
+                    </div>
+                </div>
+                <div class="clear"></div>            
+            </div>
+            <div class="more-detail">
+                <div class="left-more-detail">
+                    <div class="slide1">
+                        <img src="img/2_slide_more.webp" alt="" id="slide1">
+                    </div>
+                    <div class="slide1">
+                        <img src="img/slide_more.webp" alt="" id="slide1">
+                    </div>
+                </div>
+                <script >
+
+                    var slideIndex1 = 0;
+                    showSlides1();
+
+                    function showSlides1() {
+                    var i;
+                    var slides = document.getElementsByClassName("slide1");
+                    
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                        console.log(slides[i]);
+                    }
+                    slideIndex1++;
+                    if (slideIndex1 > slides.length) {slideIndex1 = 1}
+                    
+                    slides[slideIndex1-1].style.display = "block";
+                    setTimeout(showSlides1, 5000); // Change image every 2 seconds
+                    }
+                </script>
+                
+                <div class="right-more-detail">
+                    <div class="clear"></div>
+                    <p>Có gì đặc biệt</p>
+                    <div class="img-detail"><img src="img/4_more.webp" alt=""></div>
+                    <div class="img-content">
+                        <h4>Pure Ingreidents</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam est voluptatum sunt nulla libero dolore aperiam quas fuga delectus et?</p>
+                    </div>
+                    <div class="img-detail"><img src="img/3_more.webp" alt=""></div>
+                    <div class="img-content">
+                        <h4>Sustainability</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam est voluptatum sunt nulla libero dolore aperiam quas fuga delectus et?</p>
+                    </div>
+                    <div class="img-detail"><img src="img/2_more.webp" alt=""></div>
+                    <div class="img-content">
+                        <h4>Environmentalism</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam est voluptatum sunt nulla libero dolore aperiam quas fuga delectus et?</p>
+                    </div>
+                    <div class="img-detail"><img src="img/1_more.webp" alt=""></div>
+                    <div class="img-content">
+                        <h4>Formula Transparency</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam est voluptatum sunt nulla libero dolore aperiam quas fuga delectus et?</p>
+                    </div>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="intro-bottom">
+                <div class="finish-top">
+                    <p class="p1">Feel the taste</p>
+                    <p class="p2">More than Coffee & Tea</p>
+                    <p class="p3">Flat 20% Discount</p>
+                    <a href="" class="btn">Shop now</a>
+                </div>
+                <!-- <div class="finish-bottom">
+                    <h3 class="cap">Gallery</h3>
+                    
+                </div> -->
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-up">
+            <ul>
+                <li>Help
+                    
+                        <a href="">Search</a>
+                        <a href="">Help</a>
+                        <a href="">Information</a>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Shipping Details</a>
+                    
+                </li>
+                <li>Support
+                    
+                        <a href="">Contact us</a>
+                        <a href="">About us</a>
+                        <a href="">Careers</a>
+                        <a href="">Refunds & Return</a>
+                        <a href="">Deliveries</a>
+                    
+                </li>
+                <li>Information
+                    
+                        <a href="">Search Terms</a>
+                        <a href="">Advanced Search</a>
+                        <a href="">Help & Faq's</a>
+                        <a href="">Store Location</a>
+                        <a href="">Orders & Returns</a>
+                    
+                </li>
+                <li>Contact us
+                    
+                        <span>Add</span>
+                        <span>91 12345678</span>
+                        <span>sample@domain.com</span>
+                        <span>support@somemail.com</span>
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="footer-down">
+            <span>Copyright @ 2020 Lynx Coffee Powered by EdClemons. All rights reserved.</span>
+        </div>
+    </footer>
+    
+</body>
+</html>
