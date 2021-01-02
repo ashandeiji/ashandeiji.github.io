@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lynx - Coffee Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img class="img-prd" src="img/Coffee.png" width="200px" alt=""></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="sub-menu"><a href="index.html" class="go-to">Trang chủ</a></li>
+                    <li class="sub-menu"><a href="Collection.html" class="go-to">Collection</a>
+                        <div class="mnu2">
+                           <a href="">Bán chạy</a>
+                           <ul>
+                               <li>
+                                   <div><a href="">Quý I</a></div>
+                                   
+                               </li>
+                               <li>
+                                <div><a href="">Quý II</a></div>
+                            </li>
+                            <li>
+                                <div><a href="">Quý III</a></div>
+                            </li>
+                           </ul>
+                           <a href="">Hàng mới về</a>
+                           <a href="">Sản phẩm mới</a>
+                           <a href="">Sale off</a>
+                        </div>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="Coffee.html" class="go-to">Coffee</a>
+                        <div class="mnu2">
+                           <a href="">Cappuchino</a>
+                           <a href="">Cool coffee</a>
+                           <a href="">Espresso</a>
+                           <a href="">Indian</a>
+                           <a href="">Milk shake</a>
+                           <a href="">Beverages</a>
+                        </div>
+                    </li>
+                    <li class="sub-menu"><a href="Tea.html" class="go-to">Tea</a>
+                    	<div class="mnu2">
+                           <a href="">Black tea</a>
+                           <a href="">Grean tea</a>
+                           <a href="">Oolong tea</a>
+                           <a href="">White tea</a>
+                    	</div>
+                    </li>
+                    <li class="sub-menu"><a href="#" class="go-to">Khám phá</a>
+                        <div class="mnu2">
+                           <a href="">Drinkware</a>
+                           <a href="">Tote bags</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="function">
+                <ul>
+                    <li><a><img src="img/search.png" width="20px" ></a>
+                        <div class="search-box">
+                            <input placeholder="Tìm kiếm" id="search" type="text">
+                        </div>
+                    </li>
+                    <li><a><img src="img/account.png" width="20px"></a>
+                        <div class="menu-acc">
+                            <a href="account/login.html">Đăng nhập</a><br>
+                            <a href="account/register.html">Đăng ký</a>
+                        </div>
+                    </li>
+                    
+                    <li><a id="cart"><img src="img/shopping-cart.png" width="20px"></a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">×</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+                            <div class="cart-row">
+                            <div class="cart-item cart-column">
+                                <img class="cart-item-image" src="img/prd1 (6).jpg" width="100" height="100">
+                                <span class="cart-item-title">Hạt Arabica</span>
+                            </div>
+                            <span class="cart-price cart-column">250$</span>
+                            <div class="cart-quantity cart-column">
+                                <input class="cart-quantity-input" type="number" value="1">
+                                <button class="btn btn-danger" type="button">Xóa</button>
+                            </div>
+                        </div>
+                        
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">250$</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="wrap"></div> 
+        <div class="tl-acc">
+            <p>Tea</p>
+        </div> 
+        <div class="canle">
+            <div class="banchay">
+                <div class="tieude">
+                    <p>Bán chạy</p>
+                </div>
+                <div class="sanpham">
+                    <ul>
+                        <li>
+                            <a>
+                                <img class="img-prd" src="img/sp1 (8).jpg" alt="">
+                                <div class="thongtin">Hạt Sachet</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button class="btn btn-cart">Thêm vào giỏ</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (9).jpg" alt="">
+                                <div class="thongtin">Hạt Gusto</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button class="btn btn-cart">Thêm vào giỏ</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (10).jpg" alt="">
+                                <div class="thongtin">Hạt Jamber</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button>Thêm vào giỏ</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (7).jpg" alt="">
+                                <div class="thongtin">Hạt Arabica</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button>Thêm vào giỏ</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (6).jpg" alt="">
+                                <div class="thongtin">Hạt Arabica</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button>Thêm vào giỏ</button>
+                            </div>
+                        </li>                      
+                        
+                    </ul>
+                    
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="hangve">
+                <div class="tieude">
+                    <p>Hàng mới nhập</p>
+                </div>
+                <div class="sanpham">
+                    <ul>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (4).jpg" alt="">
+                                <div class="thongtin">Hạt Sachet</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button class="btn btn-cart">Thêm vào giỏ</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (3).jpg" alt="">
+                                <div class="thongtin">Hạt Gusto</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button class="btn btn-cart">Thêm vào giỏ</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (2).jpg" alt="">
+                                <div class="thongtin">Hạt Jamber</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button>Thêm vào giỏ</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (1).jpg" alt="">
+                                <div class="thongtin">Hạt Arabica</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button>Thêm vào giỏ</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (1).jpg" alt="">
+                                <div class="thongtin">Hạt Arabica</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button>Thêm vào giỏ</button>
+                            </div>
+                        </li>                      
+                        
+                    </ul>
+                    
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="hangmoi">
+                <div class="tieude">
+                    <p>Sảm phẩm mới</p>
+                </div>
+                <div class="sanpham">
+                    <ul>
+                        <li>
+                            <a>
+                                <img class = "img-prd" src="img/prd1 (1).jpg" alt="">
+                                <div class="thongtin">Hạt Arabica</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button class="btn btn-cart">Thêm vào giỏ</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (1).jpg" alt="">
+                                <div class="thongtin">Hạt Maragogipe</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button class="btn btn-cart">Thêm vào giỏ</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (1).jpg" alt="">
+                                <div class="thongtin">Hạt Kona</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button class="btn btn-cart">Thêm vào giỏ</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (1).jpg" alt="">
+                                <div class="thongtin">Hạt Geisha</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button class="btn btn-cart">Thêm vào giỏ</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (1).jpg" alt="">
+                                <div class="thongtin">Hạt Catuai</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button class="btn btn-cart">Thêm vào giỏ</button>
+                            </div>
+                        </li>                      
+                        
+                    </ul>
+                    
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="giamgia">
+                <div class="tieude">
+                    <p>Ưu đãi</p>
+                </div>
+                <div class="sanpham">
+                    <ul>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (1).jpg" alt="">
+                                <div class="thongtin">Hạt Sachet</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button class="btn btn-cart">Thêm vào giỏ</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (1).jpg" alt="">
+                                <div class="thongtin">Hạt Gusto</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button class="btn btn-cart">Thêm vào giỏ</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (1).jpg" alt="">
+                                <div class="thongtin">Hạt Jamber</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button>Thêm vào giỏ</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (1).jpg" alt="">
+                                <div class="thongtin">Hạt Arabica</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button>Thêm vào giỏ</button>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                 <img class="img-prd" src="img/sp1 (1).jpg" alt="">
+                                <div class="thongtin">Hạt Arabica</div>
+                            </a>
+                            <div class="chucnang">
+                                <div class="gia">500$</div>
+                                <button>Thêm vào giỏ</button>
+                            </div>
+                        </li>                      
+                        
+                    </ul>
+                    
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </main>
+    <div class="wrap"></div>
+    <footer>
+        <div class="footer-up">
+            <ul>
+                <li>Trợ giúp
+                    
+                        <a href="">Tìm kiếm</a>
+                        <a href="">Trợ giúp</a>
+                        <a href="">Thông tin</a>
+                        <a href="">Chính sách</a>
+                        <a href="">Chi tiết vận chuyển</a>
+                    
+                </li>
+                <li>Hỗ trợ
+                    
+                        <a href="">Liên hệ</a>
+                        <a href="">Về Lynx Coffee</a>
+                        <a href="">Tuyển dụng</a>
+                        <a href="">Hoàn trả</a>
+                        <a href="">Vận chuyển</a>
+                    
+                </li>
+                <li>Thông tin
+                    
+                        <a href="">Tìm kiếm</a>
+                        <a href="">Tìm kiếm nâng cao</a>
+                        <a href="">Câu hỏi</a>
+                        <a href="">Vị trí</a>
+                        <a href="">Đặt hàng</a>
+                    
+                </li>
+                <li>Liên hệ <br>
+                    
+                        <span>Đ/C: 144 Xuan Thuy Street</span><br>
+                        <span>Phone: 91 12345678</span><br>
+                        <span><a href="mailto:maivanhieu99@gmailcom">Liên hệ: sample@lynx.com</a></span>
+                        <span><a href="mailto:support">Hỗ trợ: support@lynx.com</a></span>
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="footer-down">
+            <span>Copyright @ 2020 Lynx Coffee. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

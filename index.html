@@ -2,30 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lynx - Coffee Shop</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     
 </head>
 <body>
     <header>
         <div class="header">
             <div class="logo">
-                <a href="index.html"><img src="img/Coffee.png" width="200px" alt=""></a>
+                <a href="index.html"><img class="img-prd" src="img/Coffee.png" width="200px" alt=""></a>
             </div>
             <div class="menu">
                 <ul>
-                    <li class="sub-menu"><a href="index.html" class="go-to">Home</a></li>
-                    <li class="sub-menu"><a href="" class="go-to">Collection</a>
+                    <li class="sub-menu"><a href="index.html" class="go-to">Trang chủ</a></li>
+                    <li class="sub-menu"><a href="Collection.html" class="go-to">Collection</a>
                         <div class="mnu2">
                            <a href="">Bán chạy</a>
+                           <ul>
+                               <li>
+                                   <div><a href="">Quý I</a></div>
+                                   
+                               </li>
+                               <li>
+                                <div><a href="">Quý II</a></div>
+                            </li>
+                            <li>
+                                <div><a href="">Quý III</a></div>
+                            </li>
+                           </ul>
                            <a href="">Hàng mới về</a>
                            <a href="">Sản phẩm mới</a>
                            <a href="">Sale off</a>
                         </div>
                     </li>
                     <li class="sub-menu">
-                        <a href="" class="go-to">Coffee</a>
+                        <a href="Coffee.html" class="go-to">Coffee</a>
                         <div class="mnu2">
                            <a href="">Cappuchino</a>
                            <a href="">Cool coffee</a>
@@ -35,7 +47,7 @@
                            <a href="">Beverages</a>
                         </div>
                     </li>
-                    <li class="sub-menu"><a href="" class="go-to">Tea</a>
+                    <li class="sub-menu"><a href="Tea.html" class="go-to">Tea</a>
                     	<div class="mnu2">
                            <a href="">Black tea</a>
                            <a href="">Grean tea</a>
@@ -43,7 +55,7 @@
                            <a href="">White tea</a>
                     	</div>
                     </li>
-                    <li class="sub-menu"><a href="" class="go-to">Khám phá</a>
+                    <li class="sub-menu"><a href="#" class="go-to">Khám phá</a>
                         <div class="mnu2">
                            <a href="">Drinkware</a>
                            <a href="">Tote bags</a>
@@ -53,38 +65,81 @@
             </div>
             <div class="function">
                 <ul>
-                    <li><a href=""><img src="img/search.png" width="20px" ></a>
+                    <li><a><img src="img/search.png" width="20px" ></a>
                         <div class="search-box">
                             <input placeholder="Tìm kiếm" id="search" type="text">
                         </div>
                     </li>
-                    <li><a href=""><img src="img/account.png" width="20px"></a>
+                    <li><a><img src="img/account.png" width="20px"></a>
                         <div class="menu-acc">
                             <a href="account/login.html">Đăng nhập</a><br>
                             <a href="account/register.html">Đăng ký</a>
                         </div>
                     </li>
-                    <li><a href=""><img src="img/shopping-cart.png" width="20px"></a>
+                    
+                    <li><a href="Collection.html"><img src="img/shopping-cart.png" width="20px"></a>
 
                     </li>
                 </ul>
             </div>
             <div class="clear"></div>
         </div>
+        <div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">×</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+                            <div class="cart-row">
+                            <div class="cart-item cart-column">
+                                <img class="cart-item-image" src="img/prd1 (6).jpg" width="100" height="100">
+                                <span class="cart-item-title">Hạt Arabica</span>
+                            </div>
+                            <span class="cart-price cart-column">250$</span>
+                            <div class="cart-quantity cart-column">
+                                <input class="cart-quantity-input" type="number" value="1">
+                                <button class="btn btn-danger" type="button">Xóa</button>
+                            </div>
+                        </div>
+                        
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">250$</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        </div>
     </header>
     <main>
         <div class="intro">
             <div class="intro-top">
                 <div class="slide">
-                    <img src="img/slider-1_2000x.webp" alt="" id="slide">
+                    <img src="img/slid2.png" alt="" id="slide">
                     <div class="caption">Caption 1</div>
                 </div>
                 <div class="slide">
-                    <img src="img/slider-3_c967c149-8859-4de5-b5f0-3099b3ce4ce2_2000x.webp" alt="" id="slide">
+                    <img src="img/slid1.png" alt="" id="slide">
                     <div class="caption">Caption 2</div>
                 </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 <script >
                     var slideIndex = 0;
                     showSlides();
@@ -113,17 +168,17 @@
                     <div class="img-detail"><img src="img/1_detail.webp" alt="" srcset=""></div>
                     <div class="img-content">
                         <h4>Croissant</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui, perspiciatis optio voluptatum sit a, nemo natus, est dolor error deleniti sapiente porro sunt rerum. Quod voluptatum facilis tempore sunt?</p>
+                        <p>Bánh sừng bò được làm đầu tiên ở Áo. Hình dạng của nó được hình thành hoàn toàn ngẫu nhiên. Loại bánh ngọt thông dụng này xuất hiện đầu tiên vào năm 1683.</p>
                     </div>
                     <div class="img-detail"><img src="img/2_detail.webp" alt="" srcset=""></div>
                     <div class="img-content">
                         <h4>French Toast</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui, perspiciatis optio voluptatum sit a, nemo natus, est dolor error deleniti sapiente porro sunt rerum. Quod voluptatum facilis tempore sunt?</p>
+                        <p>Bánh mì khô được nhúng trong hỗn hợp trứng sữa thơm mùi va-ni rồi chiên với bơ tới khi hai mặt hơi xém một chút. Hai mặt ngoài này của bánh sẽ hơi giòn trong khi ruột bánh nhờ trứng sữa mà sẽ rất mềm và béo. </p>
                     </div>
                     <div class="img-detail"><img src="img/3_detail.webp" alt="" srcset=""></div>
                     <div class="img-content">
                         <h4>Pancakes</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui, perspiciatis optio voluptatum sit a, nemo natus, est dolor error deleniti sapiente porro sunt rerum. Quod voluptatum facilis tempore sunt?</p>
+                        <p>Khi khoai tây được sử dụng như một phần chính của bột, kết quả là một chiếc bánh kếp khoai tây. Khi buttermilk được sử dụng thay thế hoặc ngoài sữa, bánh kếp sẽ phát triển hương vị tart.</p>
                     </div>
                 </div>
                 <div class="detail-center">
@@ -136,20 +191,24 @@
                     <div class="img-detail"><img src="img/4_detail.webp" alt="" srcset=""></div>
                     <div class="img-content">
                         <h4>Turkish Coffee</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui, perspiciatis optio voluptatum sit a, nemo natus, est dolor error deleniti sapiente porro sunt rerum. Quod voluptatum facilis tempore sunt?</p>
+                        <p>Cà phê có thể được xay tại nhà trong một máy xay thủ công được sản xuất để xay rất mịn, được đặt hàng bởi các thương nhân cà phê ở hầu hết các nơi trên thế giới.</p>
                     </div>
                     <div class="img-detail"><img src="img/5_detail.webp" alt="" srcset=""></div>
                     <div class="img-content">
                         <h4>Coffee To Go</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui, perspiciatis optio voluptatum sit a, nemo natus, est dolor error deleniti sapiente porro sunt rerum. Quod voluptatum facilis tempore sunt?</p>
+                        <p>Mọi người đều bận rộn hòa mình vào công việc và chẳng hề có thời gian rảnh rỗi để nghỉ xả hơi, những lúc áp lực công việc căng thẳng thì cà phê là cứu cánh giúp những người bộn bề công việc tỉnh táo phần nào. </p>
                     </div>
                     <div class="img-detail"><img src="img/6_detail.webp" alt="" srcset=""></div>
                     <div class="img-content">
                         <h4>Morning Coffee</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui, perspiciatis optio voluptatum sit a, nemo natus, est dolor error deleniti sapiente porro sunt rerum. Quod voluptatum facilis tempore sunt?</p>
+                        <p>Nhiều người cho rằng uống cà phê gây hại cho sức khỏe, tuy nhiên nếu sử dụng đúng cách, đúng thời điểm vào mỗi sáng, bạn sẽ nhận… ra không ít công dụng bất ngờ của thức uống này.</p>
                     </div>
                 </div>
                 <div class="clear"></div>            
+            </div>
+            <div class="video">
+                <br>
+                <video width="100%" src="img/COFFEE B ROLL_Trim.mp4" controls></video>
             </div>
             <div class="more-detail">
                 <div class="left-more-detail">
@@ -183,7 +242,7 @@
                 
                 <div class="right-more-detail">
                     <div class="clear"></div>
-                    <p>Có gì đặc biệt</p>
+                    <p><span class="text">Có gì đặc biệt</span></p>
                     <div class="img-detail"><img src="img/4_more.webp" alt=""></div>
                     <div class="img-content">
                         <h4>Pure Ingreidents</h4>
@@ -210,10 +269,10 @@
             </div>
             <div class="intro-bottom">
                 <div class="finish-top">
-                    <p class="p1">Feel the taste</p>
-                    <p class="p2">More than Coffee & Tea</p>
-                    <p class="p3">Flat 20% Discount</p>
-                    <a href="" class="btn">Shop now</a>
+                    <p class="p1">Trải nghiệm hương vị</p>
+                    <p class="p2">Hơn cả Coffee & Tea</p>
+                    <p class="p3">Giảm ngay 20%</p>
+                    <a href="Collection.html" style="text-decoration: none; color: white; padding: 20px 40px;" class="btn">Shop now</a>
                 </div>
                 <!-- <div class="finish-bottom">
                     <h3 class="cap">Gallery</h3>
@@ -226,47 +285,47 @@
     <footer>
         <div class="footer-up">
             <ul>
-                <li>Help
+                <li>Trợ giúp
                     
-                        <a href="">Search</a>
-                        <a href="">Help</a>
-                        <a href="">Information</a>
-                        <a href="">Privacy Policy</a>
-                        <a href="">Shipping Details</a>
-                    
-                </li>
-                <li>Support
-                    
-                        <a href="">Contact us</a>
-                        <a href="">About us</a>
-                        <a href="">Careers</a>
-                        <a href="">Refunds & Return</a>
-                        <a href="">Deliveries</a>
+                        <a href="">Tìm kiếm</a>
+                        <a href="">Trợ giúp</a>
+                        <a href="">Thông tin</a>
+                        <a href="">Chính sách</a>
+                        <a href="">Chi tiết vận chuyển</a>
                     
                 </li>
-                <li>Information
+                <li>Hỗ trợ
                     
-                        <a href="">Search Terms</a>
-                        <a href="">Advanced Search</a>
-                        <a href="">Help & Faq's</a>
-                        <a href="">Store Location</a>
-                        <a href="">Orders & Returns</a>
+                        <a href="">Liên hệ</a>
+                        <a href="">Về Lynx Coffee</a>
+                        <a href="">Tuyển dụng</a>
+                        <a href="">Hoàn trả</a>
+                        <a href="">Vận chuyển</a>
                     
                 </li>
-                <li>Contact us
+                <li>Thông tin
                     
-                        <span>Add</span>
-                        <span>91 12345678</span>
-                        <span>sample@domain.com</span>
-                        <span>support@somemail.com</span>
+                        <a href="">Tìm kiếm</a>
+                        <a href="">Tìm kiếm nâng cao</a>
+                        <a href="">Câu hỏi</a>
+                        <a href="">Vị trí</a>
+                        <a href="">Đặt hàng</a>
+                    
+                </li>
+                <li>Liên hệ <br>
+                    
+                        <span>Đ/C: 144 Xuan Thuy Street</span><br>
+                        <span>Phone: 91 12345678</span><br>
+                        <span><a href="mailto:maivanhieu99@gmailcom">Liên hệ: sample@lynx.com</a></span>
+                        <span><a href="mailto:support">Hỗ trợ: support@lynx.com</a></span>
                     
                 </li>
             </ul>
         </div>
         <div class="footer-down">
-            <span>Copyright @ 2020 Lynx Coffee Powered by EdClemons. All rights reserved.</span>
+            <span>Copyright @ 2020 Lynx Coffee. All rights reserved.</span>
         </div>
     </footer>
-    
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
